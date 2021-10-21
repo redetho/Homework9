@@ -21,7 +21,7 @@ namespace atividade.Entities
             Saldo = saldo;
         }
         //método de saque
-        public void Saque(double saldoTotal)
+        public virtual void Saque(double saldoTotal)
         {
             Saldo -= saldoTotal;
         }

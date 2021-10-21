@@ -23,7 +23,10 @@ namespace atividade.Entities
             Saldo += Saldo * TaxaJuros;
         }
         //sobreposição
-
+        public override void Saque(double saldoTotal)
+        {
+            Saldo -= saldoTotal;
+        }
     }
     
 }
